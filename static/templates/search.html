@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groupie Tracker</title>
+    <link rel="stylesheet" href="/static/css/search.css" media="all">
+</head>
+<body>
+    <h1><a href="/">Groupie Tracker</a></h1>
+    <article main="main">
+        {{range .}}
+        <a href="/artist/{{ .ID }}" method="POST">
+            <div class="card">
+                <img src="{{ .Image }}">
+                <div class="card-body">
+                    <p class="card-title"> {{ .Name  }}</p>
+                </div>
+            </div>
+        </a>
+        {{end}}
+        <div class="parent">
+        <div class="return-button">  
+            <a href="/"> Go Back </a>
+        </div>
+    </div>
+    </article>
+</body>
+</html>

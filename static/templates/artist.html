@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groupie Tracker</title>
+    <link rel="stylesheet" href="/static/css/artist.css" media="all">
+</head>
+
+
+<body>
+    <h1>{{ .Name  }}</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="{{ .Image }}">
+                </div>
+                <div class="card-title">
+                    <h2> {{ .Name  }}</h2>
+                </div>
+                <div class="card-creation-date">
+                    <p> Established: {{ .CreationDate  }} </p>
+                </div>
+                <div class="card-album-name">
+                    <p> First Album: {{ .FirstAlbum }} </p>
+                </div>
+                <div class="card-members">
+                    <p> Members: <br>
+                        {{ range .Members }}
+                        <br> {{ . }}
+                        {{ end }}
+                    </p>
+                </div>
+                <div class="card-locations">
+                    <p> Concert dates: <br>
+                        {{ range $key, $value := .DatesLocations }}
+                        <br> > {{ $key }} <br>{{ range $value }}  {{. }} {{end}} <br>
+                        {{ end }}
+                    </p>
+                </div>
+                <div class="parent">
+                <div class="return-button"> 
+                    <a href="/"> Go Back </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

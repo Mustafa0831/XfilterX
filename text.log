@@ -1,0 +1,6 @@
+2021/10/19 15:52:34 listen tcp :8080: bind: address already in use
+2021/10/19 15:53:03 listen tcp :8080: bind: address already in use
+2021/10/19 15:54:31 listen tcp :8080: bind: address already in use
+2021/10/19 15:55:39 listen tcp :8080: bind: address already in use
+2021/10/19 15:56:11 listen tcp :8080: bind: address already in use
+2021/10/19 22:44:03 Get "https://groupietrackers.herokuapp.com/api/artists": dial tcp: lookup groupietrackers.herokuapp.com on 127.0.0.53:53: server misbehaving GetJSON()1st

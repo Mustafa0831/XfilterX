@@ -1,0 +1,145 @@
+* {
+    /*For perfect marge*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+body{
+    background: #26a69a;
+    margin-top: 0em;
+}
+.split{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a{
+    color: #4C5656;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+a:hover{
+    color:  rgb(101, 165, 248);
+}
+
+p:hover{
+    color:  rgb(101, 165, 248);
+}
+.Filter-Table{
+    text-align: center;
+}
+button {
+    margin: 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    background-color:#4C5656;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 10px 20px;
+}
+.cb {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+@media (max-width:1200px){
+    .cb {
+        width: 70%;
+    }
+}
+
+@media (max-width:700px){
+    .cb {
+        width: 100%;
+        display: block;
+    }
+}
+
+.cb > div {
+    margin: auto;
+}
+
+.cb > div > label {
+    display: block;
+}
+
+.data{
+    padding: 20px;
+}
+
+.data:hover{
+    color: black;
+}
+
+button:hover{
+    color:  rgb(101, 165, 248);
+}
+input {
+    border: 1px solid white;
+    height: 34px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.cb-title{
+    color: blanchedalmond;
+}
+
+input:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    background-color: #b7b7bd;
+}
+.card {
+    background-color:#4C5656;
+    border-radius: 20px;
+    height: 420px;
+    width: 250px;
+    margin: 25px;
+    border: 5px solid rgb(233, 226, 203);
+    border-top-width: 60px;
+    border-top-style: solid;
+    transition: linear .2s;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.container {
+    background: #26a69a;
+    color: #fff;
+}
+p {
+    margin: 4px;
+    font-family: Raleway, Open Sans, Droid Sans, Roboto, arial, sans-serif;
+    color:black;
+    font-size: 15px;
+}
